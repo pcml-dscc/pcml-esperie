@@ -246,14 +246,14 @@ print("\n✓ Checkpoint 2 passed — datasets merged to monthly frequency\n")
 #   imbalance_ratio_threshold  = 0.05
 #   duplicate_pct_threshold    = 0.05
 alert_config = AlertConfig(
-    high_correlation_threshold=____,  # Hint: 0.95
-    high_null_pct_threshold=____,  # Hint: 0.10
-    constant_threshold=____,  # Hint: 1
-    high_cardinality_ratio=____,  # Hint: 0.95
-    skewness_threshold=____,  # Hint: 3.0
-    zero_pct_threshold=____,  # Hint: 0.30
-    imbalance_ratio_threshold=____,  # Hint: 0.05
-    duplicate_pct_threshold=____,  # Hint: 0.05
+    high_correlation_threshold=0.95,  # Hint: 0.95
+    high_null_pct_threshold=0.10,  # Hint: 0.10
+    constant_threshold=1,  # Hint: 1
+    high_cardinality_ratio=0.95,  # Hint: 0.95
+    skewness_threshold=3.0,  # Hint: 3.0
+    zero_pct_threshold=0.30,  # Hint: 0.30
+    imbalance_ratio_threshold=0.05,  # Hint: 0.05
+    duplicate_pct_threshold=0.05,  # Hint: 0.05
 )
 
 print(f"=== Custom AlertConfig ===")

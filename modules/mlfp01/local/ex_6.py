@@ -66,7 +66,7 @@ print(f"  You're ready to start!\n")
 
 # Initialise the visualiser — one instance, many chart types
 # TODO: Initialise ModelVisualizer — assign to variable `viz`
-viz = ____  # Hint: ModelVisualizer()
+viz = ModelVisualizer()  # Hint: ModelVisualizer()
 
 # Create output directory for charts
 os.makedirs("charts", exist_ok=True)
@@ -121,8 +121,8 @@ print("\n✓ Checkpoint 1 passed — ModelVisualizer ready\n")
 # --- 2a: Overall price distribution ---
 # TODO: Call viz.histogram() with data=hdb, column="resale_price", bins=50
 fig_hist = viz.histogram(
-    data=____,  # Hint: hdb
-    column=____,  # Hint: "resale_price"
+    data=hdb,  # Hint: hdb
+    column="resale_price",  # Hint: "resale_price"
     bins=50,
     title="HDB Resale Price Distribution (All Years)",
 )
@@ -201,8 +201,8 @@ hdb_sample = hdb.sample(n=min(5_000, hdb.height), seed=42)
 # TODO: Call viz.scatter() with data=hdb_sample, x="floor_area_sqm", y="resale_price"
 fig_scatter = viz.scatter(
     data=hdb_sample,
-    x=____,  # Hint: "floor_area_sqm"
-    y=____,  # Hint: "resale_price"
+    x="floor_area_sqm",  # Hint: "floor_area_sqm"
+    y="resale_price",  # Hint: "resale_price"
     title="HDB Resale Price vs Floor Area",
 )
 fig_scatter.write_html("charts/ex6_price_vs_area.html")
